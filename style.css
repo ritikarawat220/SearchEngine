@@ -1,116 +1,69 @@
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+* {
+  font-family: "Roboto", sans-serif;
+}
 
-.gcse-search {
-    margin: 20px auto;
-    max-width: 500px;
-  }
+body {
+  background-color: #fafafa;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1440px;
+}
 
-  html {
-    position: relative;
-width: 360.01px;
-height: 762.89px;
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
 
-background: #FAFAFA;
-transform: rotate(0deg);
+.logo {
+  width: 50px;
+}
 
-  }
-  #search-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  #video-preview-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+.gsc-webResult .gsc-url-top {
+  display: none !important;
+}
+
+.gsc-table-cell-snippet-close {
+  display: none !important;
+}
+
+.gs-webResult.gs-result {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+}
+
+.gsc-control-cse {
+  padding: 0 !important;
+}
+.gsc-search-button-v2 {
+  padding: 0 !important;
+}
+.gsc-search-button-v2 {
+  border-color: #fff !important;
+  background-color: #fff !important;
+  transform: translateX(-35px) !important;
+}
+
+.gsc-search-button-v2 svg {
+  fill: #5353ff !important;
+}
+
+.gsc-above-wrapper-area-container {
+  display: none !important;
+}
+
+.gsc-adBlock {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  body {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
+    margin: 0 20px;
   }
-  
-  #video-preview {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 20px;
+  .header {
+    gap: 10px;
   }
-  
-  #video-frame {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-  }
-  
-  #video-frame iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  #video-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  #video-buttons button {
-    margin: 0 5px;
-  }
-/* Add your custom styles here */
-.search-container {
-    margin-bottom: 20px;
 }
-
-.video-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.video-list div {
-    width: 300px;
-    margin: 10px;
-}
-
-#video-preview-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-}
-
-#video-preview {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background-color: #fff;
-    padding: 20px;
-}
-
-#video-frame {
-    height: 80%;
-}
-
-#video-buttons {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#video-buttons button {
-    margin: 5px;
-}
-    
