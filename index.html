@@ -1,9 +1,6 @@
-<!-- 
-<script async src="https://cse.google.com/cse.js?cx=f12b96ff00ba94d4d"></script>
-        <div class="gcse-search"></div> -->
-        <!DOCTYPE html>
-        <html lang="en">
-          <head>
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
             <meta charset="UTF-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,11 +12,53 @@
 
           </head> 
           <body>
+            <div class="container">
             <header class="heading">
-              <img class="logo" src="./pawxy-logo.png" alt="logo"/>
+              <img class="logo" src="./images/pawxy-logo.png" alt="logo"/>
               <h1 class="title">Simple Video Search Engine</h1>
             </header>
+            <div class="searchbar">
+              <div class="gcse-searchbox"></div>
+            </div>
+            <div class="resultbox">
+              <div defaultToImageSearch="true" class="gcse-searchresults"></div>
+            </div>
+            <script defer src="./index.js"></script>
             <script async src="https://cse.google.com/cse.js?cx=f12b96ff00ba94d4d"></script>
-            <div class="gcse-search"></div>
+            <div id="modalContainer">
+              <div id="modalcontent">
+                <div class="modalimg-box">
+                  <img id="modalimage" alt="video"
+                    src="https://i.ytimg.com/vi/DASUQ1Xo744/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBszGDboAv5n-fsUJq1neYMtycLfQ"
+                    height="260" width="367" class="videoImg"/>
+                  <img src="./images/youtube.png"  alt="play"
+                    height="82" width="82" class="ytlogo"
+                  />
+                </div>
+    
+                <div class="modalinfo-box">
+                  <p class="modal-title" id="title">
+                    K-pop group BLACKPINK to release Ready For Love on July 29. Details inside. 
+                    - India Today
+                  </p>
+                  <div class="modal-subinfo">
+                    <div class="flex">
+                      <img
+                        src="./images/youtube.png" alt="youtube"
+                        width="14" height="13"
+                      />
+                      <span id="channelname"> Koreaboo.com</span>
+                    </div>
+        
+                    <span> • </span>
+                    <span id="viewCount">50m views</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lastbtn">
+                <a class="visit-btn" id="visit">Visit</a>
+                <a class="close-btn" id="close">Close</a>
+              </div>
+          </div>
           </body>
         </html>
